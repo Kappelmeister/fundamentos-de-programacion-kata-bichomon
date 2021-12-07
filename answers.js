@@ -38,6 +38,19 @@ for (i = 0; i < substitute.length; i++) {
 
 // Premium. Cambia el fondo de todos los infocard-lg-data text-muted para todos los Pokimon voladores itype flying
 
+var klass = document.getElementsByClassName('infocard-lg-data text-muted');
+var fly = document.getElementsByClassName('itype flying');
+for (i = 0; i < klass.length; i++) {
+    for (j = 0; j < fly.length; j++) {
+        if ((klass[i] == fly)) {
+            klass[i].style.backgroundColor = 'yellow';
+        }
+    }
+}
+
+
+
+
 
 
 
